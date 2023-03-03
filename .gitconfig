@@ -1,0 +1,16 @@
+[user]
+	name = Y.Ninomiya(kadoma)
+	email = kadoma.fukakusa248@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+      s = status
+      b = branch
+      co = checkout
+      a = add
+      aa = add -A
+      cm = commit -m
+      cp = cherry-pick
+      ll = log --graph --name-status --date=relative
+[core]
+	editor = nvim
