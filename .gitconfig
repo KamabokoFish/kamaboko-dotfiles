@@ -4,6 +4,7 @@
 [init]
 	defaultBranch = main
 [alias]
+      d = diff
       s = status
       b = branch
       co = checkout
