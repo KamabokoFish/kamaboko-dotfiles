@@ -1,0 +1,11 @@
+# デフォルトの bind generic G !git gc を無効化する
+bind generic G none
+
+# main viewの左端にコミットIDを表示する
+set main-view = id date author commit-title:graph=yes,refs=yes
+
+# 差分の前後の表示行数（diff-context)を指定 
+set diff-context = 5
+
+# Cを押した場合にCommitizenでコミット
+bind status  C  !cz c
