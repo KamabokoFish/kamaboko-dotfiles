@@ -1,7 +1,8 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    #alias
     alias python='python3'
     alias tp='trash-put'
+    alias nut='nautilus .'
     alias dstart='systemctl --user start docker-desktop'
     alias dstop='systemctl --user stop docker-desktop'
     alias la='exa -la --icons'
