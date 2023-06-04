@@ -1,17 +1,35 @@
 [user]
 	name = Y.Ninomiya(kadoma)
 	email = kadoma.fukakusa248@gmail.com
-[init]
-	defaultBranch = main
-[alias]
-      d = diff
-      s = status
-      b = branch
-      co = checkout
-      a = add
-      aa = add -A
-      cm = commit -m
-      cp = cherry-pick
-      ll = log --graph --name-status --date=relative
 [core]
 	editor = nvim
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+  ui = auto
+[init]
+	defaultBranch = main
+[rebase]
+  autostash = true
+[alias]
+  d = diff
+  s = status
+  b = branch
+  co = checkout
+  a = add
+  aa = add -A
+  cm = commit -m
+  ps = push origin
+  cp = cherry-pick
+  ll = log --graph --name-status --date=relative
+  dft = difftool
+  mgt = 
+[diff]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
+[mergetool "nvimdiff"]
+  cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
