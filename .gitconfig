@@ -25,11 +25,12 @@
   ps = push origin
   cp = cherry-pick
   ll = log --graph --name-status --date=relative
-  dft = difftool
-  mgt = 
+  df = difftool -y
+  mt = mergetool -y
 [diff]
   tool = nvimdiff
 [difftool "nvimdiff"]
   cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
+  trustExitCode = true
 [mergetool "nvimdiff"]
   cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
