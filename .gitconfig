@@ -16,7 +16,7 @@
   autostash = true
 [alias]
   d = diff
-  s = status
+  su = status
   b = branch
   co = checkout
   a = add
@@ -24,7 +24,8 @@
   cm = commit -m
   ps = push origin
   cp = cherry-pick
-  ll = log --graph --name-status --date=relative
+  ll = log --graph --date=relative --name-status --abbrev-commit
+  sl = log --graph --oneline --date=relative --abbrev-commit
   df = difftool -y
   mt = mergetool -y
 [diff]
