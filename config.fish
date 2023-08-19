@@ -1,4 +1,6 @@
 if status is-interactive
+    set -g fish_greeting
+
     #alias
     alias python='python3'
     alias tp='trash-put'
@@ -14,5 +16,5 @@ if status is-interactive
     alias lg='lazygit'
     alias g='git'
     alias com='cz c'
-    eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
