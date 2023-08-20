@@ -22,7 +22,7 @@
   a = add
   aa = add -A
   cm = commit -m
-  ps = push origin
+  ps = "!git push origin $(git rev-parse --abbrev-ref @)"
   cp = cherry-pick
   ll = log --graph --date=relative --name-status --abbrev-commit
   sl = log --graph --oneline --date=relative --abbrev-commit
