@@ -30,6 +30,8 @@
   mt = mergetool -y
 [diff]
   tool = nvimdiff
+[merge]
+	tool = nvimdiff
 [difftool "nvimdiff"]
   cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
   trustExitCode = true
