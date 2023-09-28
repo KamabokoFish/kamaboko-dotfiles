@@ -1,6 +1,5 @@
 if status is-interactive
     set -g fish_greeting
-
     #alias
     alias python='python3'
     alias tp='trash-put'
@@ -11,6 +10,9 @@ if status is-interactive
     alias ll='eza -l --icons'
     alias lt='eza -T -L 3 -a -I "node_modules|.git|.cache" --icons'
     alias t='tmux'
+    alias tse='tmux new -s'
+    alias tki='tmux kill-server'
+    alias ee='exit'
     alias bd='bundle'
     alias vim='nvim'
     alias lg='lazygit'
