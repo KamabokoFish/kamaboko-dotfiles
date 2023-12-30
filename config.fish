@@ -6,6 +6,7 @@ if status is-interactive
     alias nut='nautilus .'
     alias dstart='systemctl --user start docker-desktop'
     alias dstop='systemctl --user stop docker-desktop'
+    alias dcon='docker container'
     alias la='eza -la --icons'
     alias ll='eza -l --icons'
     alias lt='eza -T -L 3 -a -I "node_modules|.git|.cache" --icons'

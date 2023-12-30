@@ -1,28 +1,46 @@
 // Inkdrop user-style
-.mde-preview pre code{
-  font-size:18.5px;
+
+body {
+  // 基本サイズ
+  font-size: 18px;
+}
+
+.mde-preview pre code {
+  font-size: 17px;
 }
 
 .mde-preview code {
   // inline-code block background-color
-  background-color: #42434670
+  background-color: #42434670;
+}
+.editor-meta-layout {
+  //floating-toolbar fontsize
+  font-size: 1.3rem !important;
+}
+.note-tags-bar-item .ui.label {
+  // tag fontsize
+  font-size: inherit !important;
+}
+.sidebar-menu-item {
+  // sidebar fontsize
+  font-size: inherit !important;
 }
 
 // Resize image size
 .editor {
   .mde-cm-wrapper .CodeMirror .CodeMirror-linewidget,
   .mde-preview {
-    img[alt$='#small'] {
+    img[alt$="#small"] {
       max-width: 75% !important;
       min-width: 200pt !important;
     }
 
-    img[alt$='#x-small'] {
+    img[alt$="#x-small"] {
       max-width: 50% !important;
       min-width: 100pt !important;
     }
 
-    img[alt$='#xx-small'] {
+    img[alt$="#xx-small"] {
       max-width: 25% !important;
       min-width: 50pt !important;
     }
