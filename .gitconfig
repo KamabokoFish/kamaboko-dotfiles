@@ -19,6 +19,7 @@
   su = status
   b = branch
   co = checkout
+  si = switch
   a = add
   aa = add -A
   cm = commit -m
