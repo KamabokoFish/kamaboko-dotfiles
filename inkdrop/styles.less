@@ -5,8 +5,13 @@ body {
   font-size: 17px;
 }
 
-.mde-preview{
-  padding: 40px !important;
+//デフォルトのPreviewで、CSSのセレクタが非常に暗いため色を上書き
+body[class*="dark-ui"] .mde-preview .cm-qualifier {
+  color: #d38888;
+}
+
+.mde-preview {
+  padding: 20px !important;
 }
 
 .mde-preview pre code {
@@ -26,7 +31,7 @@ body {
   // tag fontsize
   font-size: inherit !important;
 }
-.sidebar-menu-item {
+.sidebar-menu-item-content {
   // sidebar fontsize
   font-size: inherit !important;
 }
