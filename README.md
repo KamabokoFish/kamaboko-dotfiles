@@ -1,5 +1,11 @@
 ### dotfiles
 
+Branch
+- `main`
+  - ほぼREADMEだけ
+- `linux`
+- `macos`
+
 `init.sh`
 - Homeディレクトリ直下に設定ファイルのリンクを貼る
 - 一部のファイルについては作成しないため注意
