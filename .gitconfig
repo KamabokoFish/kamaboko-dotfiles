@@ -1,8 +1,8 @@
 [user]
-	name = kamaboko
-	email = kadoma.fukakusa248@gmail.com
+  name = kamaboko
+  email = kadoma.fukakusa248@gmail.com
 [core]
-	editor = nvim
+  editor = nvim
 [color]
   status = auto
   diff = auto
@@ -11,7 +11,7 @@
   grep = auto
   ui = auto
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [rebase]
   autostash = true
 [alias]
@@ -32,7 +32,7 @@
 [diff]
   tool = nvimdiff
 [merge]
-	tool = nvimdiff
+  tool = nvimdiff
 [difftool "nvimdiff"]
   cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
   trustExitCode = true
