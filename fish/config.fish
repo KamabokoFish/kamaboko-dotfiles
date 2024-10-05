@@ -1,9 +1,12 @@
+# fish上でHomebrewを使う
+eval (/opt/homebrew/bin/brew shellenv)
+
 if status is-interactive
     set -g fish_greeting
     #alias
     alias python='python3'
     alias tp='trash-put'
-    alias nut='nautilus .'
+    # alias nut='nautilus .'
     alias dstart='systemctl --user start docker-desktop'
     alias dstop='systemctl --user stop docker-desktop'
     alias dcon='docker container'
@@ -20,4 +23,4 @@ if status is-interactive
     alias g='git'
     alias com='cz c'
 end
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
