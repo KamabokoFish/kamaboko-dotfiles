@@ -2,11 +2,14 @@
 eval (/opt/homebrew/bin/brew shellenv)
 
 if status is-interactive
+
+    mise activate fish | source
+
     set -g fish_greeting
+
     #alias
-    alias python='python3'
+    # alias python='python3'
     alias tp='trash-put'
-    # alias nut='nautilus .'
     alias dstart='systemctl --user start docker-desktop'
     alias dstop='systemctl --user stop docker-desktop'
     alias dcon='docker container'
@@ -22,5 +25,7 @@ if status is-interactive
     alias lg='lazygit'
     alias g='git'
     alias com='cz c'
+else
+    mise activate fish --shims | source
 end
 
