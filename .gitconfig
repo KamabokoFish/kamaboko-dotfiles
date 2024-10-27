@@ -23,7 +23,7 @@
   a = add
   aa = add -A
   cm = commit -m
-  ps = "!git push origin $(git rev-parse --abbrev-ref @)"
+  ps = "!git push -u origin $(git rev-parse --abbrev-ref @)"
   cp = cherry-pick
   ll = log --graph --date=relative --name-status --abbrev-commit
   sl = log --graph --oneline --date=relative --abbrev-commit
@@ -39,3 +39,5 @@
 [mergetool "nvimdiff"]
   cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
   keepBackup = false
+[push]
+  autoSetupRemote = true

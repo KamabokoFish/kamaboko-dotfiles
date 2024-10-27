@@ -4,13 +4,22 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- config.color_scheme = 'Gooey (Gogh)'
-config.color_scheme = 'Everforest Dark (Gogh)'
-config.window_background_opacity = 0.97
+config.initial_cols = 110
+config.initial_rows = 40
+config.color_scheme = 'Ayu Mirage'
+config.window_background_opacity = 0.95
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
+
+config.macos_window_background_blur = 50
 -- フォントの設定
-config.font = wezterm.font("UDEV Gothic 35NF", {weight="Bold"})
+config.font = wezterm.font("UDEV Gothic 35NF", { weight = "Bold" })
 -- フォントサイズの設定
-config.font_size = 17
+config.font_size = 16.5
 
 -- and finally, return the configuration to wezterm
 return config
