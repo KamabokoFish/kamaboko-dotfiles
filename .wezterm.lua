@@ -4,8 +4,8 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-config.initial_cols = 110
-config.initial_rows = 40
+config.initial_cols = 130
+config.initial_rows = 50
 config.color_scheme = 'Ayu Mirage'
 config.window_background_opacity = 0.95
 config.window_padding = {
