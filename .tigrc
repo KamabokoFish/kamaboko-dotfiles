@@ -1,3 +1,6 @@
+# サブビューを横分割にする
+set vertical-split = true
+
 # デフォルトの bind generic G !git gc を無効化する
 bind generic G none
 
@@ -11,4 +14,4 @@ set diff-context = 5
 set line-graphics = utf-8
 
 # Cを押した場合にCommitizenでコミット
-bind status  C  !cz c
+#bind status  C  !cz c
