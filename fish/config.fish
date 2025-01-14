@@ -6,8 +6,10 @@ if status is-interactive
     mise activate fish | source
 
     set -g fish_greeting
+    # fzf.fishのキーバインディングの設定
+    fzf_configure_bindings --variables=
 
-    #alias
+    # alias
     # alias python='python3'
     alias tp='trash-put'
     alias dstart='systemctl --user start docker-desktop'
