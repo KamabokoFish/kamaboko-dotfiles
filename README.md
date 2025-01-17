@@ -5,6 +5,7 @@ Branch
   - ほぼREADMEだけ
 - `linux`
 - `macos`
+  - 現在利用しているブランチ(Macbook Air M3がメインマシン)
 
 `init.sh`
 - Homeディレクトリ直下に設定ファイルのリンクを貼る
