@@ -2,7 +2,7 @@
   name = kamaboko
   email = 79447012+KamabokoFish@users.noreply.github.com
 [core]
-  editor = nvim
+  editor = code --wait
 [color]
   status = auto
   diff = auto
