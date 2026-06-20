@@ -2,7 +2,7 @@
   name = kamaboko
   email = 79447012+KamabokoFish@users.noreply.github.com
 [core]
-  editor = code --wait
+  editor = cursor --wait
 [color]
   status = auto
   diff = auto
@@ -40,14 +40,14 @@
 #   cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
 #   keepBackup = false
 [diff]
-  tool = vscode
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+  tool = cursor
+[difftool "cursor"]
+  cmd = cursor --wait --diff $LOCAL $REMOTE
 [merge]
-  tool = vscode
+  tool = cursor
 [mergetool]
   keepBackup = false
-[mergetool "vscode"]
-  cmd = code --wait --new-window --merge $LOCAL $REMOTE $BASE $MERGED
+[mergetool "cursor"]
+  cmd = cursor --wait --new-window --merge $REMOTE $LOCAL $BASE $MERGED
 [push]
   autoSetupRemote = true

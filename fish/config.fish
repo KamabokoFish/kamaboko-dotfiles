@@ -6,14 +6,15 @@ if status is-interactive
     mise activate fish | source
 
     set -g fish_greeting
-    # fzf.fishのキーバインディングの設定
-    fzf_configure_bindings --variables=
+    # fzf.fishのキーバインディングの設定(fishのbind()を参照)
+    # Ctrl+Shift+E
+    fzf_configure_bindings --directory=\cE
 
     # alias
     # alias python='python3'
     alias tp='trash-put'
-    alias dstart='systemctl --user start docker-desktop'
-    alias dstop='systemctl --user stop docker-desktop'
+    # alias dstart='systemctl --user start docker-desktop'
+    # alias dstop='systemctl --user stop docker-desktop'
     alias dcon='docker container'
     alias la='eza -la --icons'
     alias ll='eza -l --icons'
