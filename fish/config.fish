@@ -3,8 +3,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 
 if status is-interactive
 
-    mise activate fish | source
-
     set -g fish_greeting
     # fzf.fishのキーバインディングの設定(fishのbind()を参照)
     # Ctrl+Shift+E
@@ -28,7 +26,5 @@ if status is-interactive
     alias lg='lazygit'
     alias g='git'
     alias com='cz c'
-else
-    mise activate fish --shims | source
 end
 
