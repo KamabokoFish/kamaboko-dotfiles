@@ -1,13 +1,32 @@
--- Pull in the wezterm API
 local wezterm = require 'wezterm'
-
--- This will hold the configuration.
+local mux = wezterm.mux
 local config = wezterm.config_builder()
 
-config.initial_cols = 135
-config.initial_rows = 55
+
+wezterm.on('gui-startup', function(cmd)
+  local screen = wezterm.gui.screens().main
+
+  local horizontal_ratio = 0.6
+  local vertical_ratio = 0.7
+
+  local win_width = screen.width * horizontal_ratio
+  local win_height = screen.height * vertical_ratio
+
+  local tab, pane, window = mux.spawn_window(cmd or {
+    position = {
+      x = (screen.width - win_width) / 2,
+      y = (screen.height - win_height) / 2,
+      origin = 'ActiveScreen',
+    },
+  })
+
+  window:gui_window():set_inner_size(win_width, win_height)
+
+end)
+
+
 config.color_scheme = 'Ayu Mirage'
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.85
 -- config.window_decorations = 'RESIZE'
 
 config.window_frame = {
